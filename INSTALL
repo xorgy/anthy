@@ -14,6 +14,7 @@ This document is written in Japanese(EUC-JP).
 
 (2)インストールの手順
 各種プログラムを作ります。
+
 $ ./configure
 $ make
 
@@ -21,7 +22,6 @@ $ make
 $ su
 # make install
 でインストールします。
-
 あるいはテストプログラムを実行します。
 $ cd test
 $ ./anthy
@@ -66,3 +66,7 @@ etc/anthy-utf.conf
  */etc/ld.so.conf に /usr/local/lib を追加して ldconfigを行う。
  *環境変数 LD_LIBRARY_PATHに /usr/local/lib をセットする。
  のいずれかの方法で解決することができます。
+
+./configureがうまく動かない場合は、
+$ ./autogen.sh
+をお試しください
